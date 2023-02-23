@@ -155,11 +155,14 @@ main {
   margin-bottom: 2rem;
 }
 .person {
-  display: grid;
-  grid-template-columns: auto 1fr;
+ /*  display: grid;
+  grid-template-columns: auto 1fr; */
+  display: flex;
   column-gap: 0.75rem;
   margin-bottom: 1.5rem;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .person img {
   width: 75px;
@@ -188,4 +191,11 @@ main {
   border-radius: var(--radius);
   outline: 1px solid rgba(242, 138, 178, 0.8);
   cursor: pointer;
+}
+
+.person button{
+  width: 120px;
+  margin-right: 0;
+  background: red;
+  outline: none
 }
