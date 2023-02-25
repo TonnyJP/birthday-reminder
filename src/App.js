@@ -13,7 +13,7 @@ function App() {
   }
   return (<main>
     <section className="container">
-    <h3>{`${allBirthday.length} birthdays today`}</h3>
+    {allBirthday.length <= 1 ? <h3>{`${allBirthday.length} birthday today`}</h3> : <h3>{`${allBirthday.length} birthdays today`}</h3>}
       {allBirthday.map((birthday) => {
         const { id, name, image, age } = birthday;
         return (
